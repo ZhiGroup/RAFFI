@@ -1,5 +1,5 @@
 
-## RaPID_affin (v.0.1):
+## RAFFI (v.0.1):
 ### Usage:
 A binary version of the code is provided in the Debug folder. The boost library has to be linked dynamically. 
 You will need to add the path to the compiled boost library to $LD_LIBRARY_PATH$: export LD_LIBRARY_PATH=<boost_installation_path>/boost/lib/ 
