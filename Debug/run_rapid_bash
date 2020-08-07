@@ -1,3 +1,0 @@
-export LD_LIBRARY_PATH=/home/anaseri/boost/lib/
-./RaPID_affin_v.0.1 -i /data6/playyard/ukbiobank/rapid_affin/vcf_ukb/british/ -v british_ukb_chr -o /data/rapid_affin_output/british_ukb_2run/ -g /home/anaseri/RaPID_KING_data/unphased/map/ -t 22 -p python3.7
-
