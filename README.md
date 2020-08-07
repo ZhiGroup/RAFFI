@@ -1,7 +1,7 @@
 
 ## RAFFI (v.0.1):
 ### Usage:
-A binary version of the code is provided in the Debug folder. The libarieis have been linked statically. If you compile the libraries dynamicaly, then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH$: export LD_LIBRARY_PATH=<boost_installation_path>/boost/lib/ 
+A binary version of the code is provided in the Debug folder. The libraries have been linked statically. If you compile the libraries dynamicaly, then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH$: export LD_LIBRARY_PATH=<boost_installation_path>/boost/lib/ 
 RaPID binary (v.1.7) and a Python script to estimate the parameters for RaPID are also provided in the bin directory.
 
 The IBD segments from RaPID are given to the program (using -O tag). If the tag is not used, then the program estimates the parameters  for RaPID (by executing the python script) and run RaPID. The input phased data should be provided in a folder containing compressed (.gz) VCF files. The genetic mapping files should also be provided in a folder containing the genetic location for each site. 
