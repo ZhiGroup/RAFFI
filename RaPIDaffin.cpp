@@ -15,7 +15,7 @@
 #include <unordered_map>
 #include <memory>
 #include <string>
-#include <thread>
+#include <boost/thread.hpp>
 #include <cmath>
 #include <unordered_set>
 #include <vector>
@@ -185,7 +185,7 @@ print_usage_old(std::ostream &out)
 static void
 print_usage(std::ostream &out)
 {
-	out << "Usage: ./RaPIDaffin" << std::endl
+	out << "Usage: ./RAFFI_v.0.1" << std::endl
 			<< "Required parameters:" << std::endl
 			<< "-i <input folder>" << std::endl
 			<< "\tPath to the folder containing gzipped VCF files.." << std::endl
@@ -207,7 +207,7 @@ print_usage(std::ostream &out)
 			<< "-t {number of threads}" << std::endl
 			<< "\tOptimal number of threads is the number of chromosomes." << std::endl
 			<< "\tDefault is 22." << std::endl
-		    << "-p {number of threads}" << std::endl
+		    << "-p {Python version}" << std::endl
 		    << "\tPython path" << std::endl
 			<< "\tDefault is python3.6" << std::endl;
 }

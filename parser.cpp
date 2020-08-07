@@ -11,7 +11,7 @@
 #include <string>
 #include <algorithm>
 #include <memory>
-#include <thread>
+#include <boost/thread.hpp>
 #include <future>
 #include <mutex>
 #include <unordered_map>

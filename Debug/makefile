@@ -43,7 +43,7 @@ all: RAFFI_v.0.1
 RAFFI_v.0.1: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -L/home/anaseri/boost/lib/ -pthread -o "RAFFI_v.0.1" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/home/anaseri/boost/lib/ -static -lrt -Wl,--whole-archive -lpthread -Wl,--no-whole-archive -o "RAFFI_v.0.1" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
