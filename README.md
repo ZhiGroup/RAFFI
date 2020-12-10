@@ -10,5 +10,5 @@ Genetic Mapping File Format (tab-delimited):
 `<site_number> <genetic_location>`
 Each line contains the site index and genetic location of a site, the same order as the VCF input file. Please note that the genetic mapping file should be monotically increasing and the genetic locaion should be provided for each site. 
 
-### Compilation:
+### Installation:
 In order to compile the source code you will need to install boost library and modify the boost library path in the Make file. C++14 support is also required to compile the code.
