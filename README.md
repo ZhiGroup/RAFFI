@@ -8,7 +8,7 @@ RAFFI is a tool to infer relatedness in large phased haplotype panels. This infe
 ### Usage:
 A binary version of the code is provided in Debug folder (RAFFI_v.0.1). The libraries have been linked statically. If you compile the source code without -static tag (dynamic linking), then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH:
 <br>
-`export LD_LIBRARY_PATH=<boost_installation_path>/boost/lib/`
+`export LD_LIBRARY_PATH=<boost_installation_path>/boost/lib/:$export LD_LIBRARY_PATH`
 <br>
 RaPID binary (v.1.7) and a Python script to estimate the parameters for RaPID are also provided in the bin directory.
 
