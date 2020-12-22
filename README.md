@@ -3,7 +3,7 @@
 
 RAFFI: accurate and fast familial relationship inference in large scale biobank studies using RaPID
 
-RAFFI is an efficient and robust tool to infer relatedness in large phased genotype data. This inference is achieved by a data-driven approach that adjusts the estimation based on phasing quality and genotyping quality. 
+RAFFI is an efficient and robust tool to infer relatedness in large phased genotype data. This inference is achieved by a data-driven approach that adjusts the estimation based on phasing and genotyping quality. 
 
 ### Usage:
 A binary version of the code is provided in Debug folder (RAFFI_v.0.1). The libraries have been linked statically. If you compile the source code without -static tag (dynamic linking), then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH:
