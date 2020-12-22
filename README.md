@@ -47,7 +47,7 @@ Optional parameters:
         Default is python3.6
 </pre>
 
-###Output file:
+### Output file:
 The inferred relationships are stored in a text file along with the computed kinship coefficients and the probability of zero IBD (IBD0), IBD1, and IBD2 between any two pair of related individuals:
 
 ID1   | ID2   |  KINSHIP |IBD0  |  IBD1 |   IBD2   | TYPE
