@@ -24,7 +24,7 @@ Each line contains the site index and genetic location of a site, in the same or
 <pre>
 Required parameters:
 -i [input folder]
-        Path to the folder containing gzipped VCF files..
+        Path to the folder containing gzipped VCF files.
 -v [vcf prefix]
         Prefix of gzipped VCF files. e.g. hap1_chr for hap1_chr1.vcf.gz
 -g [genetic mapping file path]
