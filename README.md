@@ -46,5 +46,17 @@ Optional parameters:
         Python path
         Default is python3.6
 </pre>
+
+###Output file:
+The inferred relationships are stored in a text file along with the computed kinship coefficients and the probability of zero IBD (IBD0), IBD1, and IBD2 between any two pair of related individuals:
+
+ID1   | ID2   |  KINSHIP |IBD0  |  IBD1 |   IBD2   | TYPE
+----- | ------|--------|--------|--------|--------|----
+7596  |  7642 | 0.1004 | 0.7155 | 0.1674 | 0.1171 | FS
+7596  |  9552 | 0.0100 | 0.9598 | 0.0402 | 0.0000 | 4th
+7596  |  8643 | 0.0119 | 0.9525 | 0.0475 | 0.0000 | 4th
+7596  |  8114 | 0.0103 | 0.9589 | 0.0411 | 0.0000 | 4th
+
+
 ### Installation:
 To compile the source code, you will need to install the boost library and modify the boost library path in the Make file. C++14 support is also required to compile the code.
