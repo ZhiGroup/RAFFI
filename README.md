@@ -3,8 +3,11 @@
 
 RAFFI: accurate and fast familial relationship inference in large scale biobank studies using RaPID
 
-RAFFI is an efficient and robust tool to infer relatedness in large phased genotype data. This inference is achieved by a data-driven approach that adjusts the estimation based on phasing and genotyping quality. 
+RAFFI is an efficient and robust tool to infer relatedness in large phased genotype data. This inference is achieved by a data-driven approach that adjusts the estimation based on phasing and genotyping quality. The kinship coefficients are computed using detected Identical by Descent (IBD) segments from RaPID.
 
+![kinship thresholds](https://github.com/ZhiGroup/RAFFI/blob/master/kinship_threshold.png)
+|:--:| 
+| *RAFFI adjusts the kinship coefficient thresholds to infer the degrees of relatedness. Kinship coefficients computed by the total sum of IBDs using RaPID in a dataset with phasing and genotyping errors with the expected kinship coefficient thresholds (left), and adjusted kinship coefficient thresholds for different degrees of relatedness accounting for phasing/genotyping errors (right)*.|
 ### Usage:
 A binary version of the code is provided in Debug folder (RAFFI_v.0.1). The libraries have been linked statically. If you compile the source code without -static tag (dynamic linking), then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH:
 <br>
