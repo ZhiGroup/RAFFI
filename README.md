@@ -11,7 +11,7 @@ RAFFI is an efficient and robust tool to infer relatedness in large phased genot
 
 ![simulation_results](https://github.com/ZhiGroup/RAFFI/blob/master/king_raffi_simulation_res-1.png)
 |:--:| 
-| *. Precision, Recall and F1 values (harmonic mean of precision and recall) for calling categories of close relatedness for RAFFI and KING using simulated datasets with different genotyping/phasing errors, maker densities and admixture populations.
+| *Precision, Recall and F1 values (harmonic mean of precision and recall) for calling categories of close relatedness for RAFFI and KING using simulated datasets with different genotyping/phasing errors, maker densities and admixture populations.
 *.|
 
 ### Usage:
