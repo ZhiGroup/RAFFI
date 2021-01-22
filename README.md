@@ -26,6 +26,8 @@ Run time comparison between RAFFI and KING in simulated and UK Biobank data usin
 |	|KING	|Simulation |	0:00:43|
 |	|	|UK-Biobank |	~ 4 days|
 
+The simulation dataset contains 4000 and the UK Biobank 487,409 individuals (658,720 sites). The experiments were run on a server with Intel(R) Xeon(R) Silver 4116 CPU @ 2.10GHz.
+
 
 ### Usage:
 A binary version of the code is provided in Debug folder (RAFFI_v.0.1). The libraries have been linked statically. If you compile the source code without -static tag (dynamic linking), then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH:
