@@ -13,6 +13,20 @@ RAFFI is an efficient and robust tool to infer relatedness in large phased genot
 |:--:| 
 | *Precision, Recall and F1 values (harmonic mean of precision and recall) for calling categories of close relatedness for RAFFI and KING using simulated datasets with different genotyping/phasing errors, admixture populations and maker densities*.|
 
+
+Run time comparison between RAFFI and KING in simulated and UK Biobank data using all participants:
+| #Cores	| Tool	| Dataset	| Wall Time|
+| --------- | --- |------- | --- |
+|1	|RAFFI	|Simulation | 0:27:14|
+|	|	|UKB	| ~ 5 days|
+|	|KING	|Simulation |	0:06:58|
+|	|	|UKB	|~ 90 days|
+|24	|RAFFI	|Simulation |	0:02:51|
+|	|	|UKB	|~ 15 h|
+|	|KING	|Simulation |	0:00:43|
+|	|	|UK-Biobank |	~ 4 days|
+
+
 ### Usage:
 A binary version of the code is provided in Debug folder (RAFFI_v.0.1). The libraries have been linked statically. If you compile the source code without -static tag (dynamic linking), then you will need to add the path to the compiled boost library to $LD_LIBRARY_PATH:
 <br>
