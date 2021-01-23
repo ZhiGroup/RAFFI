@@ -89,4 +89,4 @@ ID1   | ID2   |  KINSHIP |IBD0  |  IBD1 |   IBD2   | TYPE
 To compile the source code, you will need to install the boost library and modify the boost library path in the Make file. C++14 support is also required to compile the code.
 
 ### Citation:
-Naseri et al. PLoS Genetics, 2021 accepted.
+Naseri A, Shi J, Lin X, Zhang S, Zhi D (2021) RAFFI: Accurate and fast familial relationship inference in large scale biobank studies using RaPID. PLOS Genetics 17(1): e1009315. https://doi.org/10.1371/journal.pgen.1009315
