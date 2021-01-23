@@ -1,32 +1,35 @@
 
-## RAFFI (v.0.1):
+## RAFFI (v.0.1): accurate and fast familial relationship inference in large scale biobank studies using RaPID
 
-RAFFI: accurate and fast familial relationship inference in large scale biobank studies using RaPID
+RAFFI is an efficient and robust method to infer relatedness in large phased genotype data. 
 
-RAFFI is an efficient and robust tool to infer relatedness in large phased genotype data. The efficienct of RAFFI is based on the observation that for very large cohorts, it is much faster to identify all pairwise IBD segments long enough than to identify all pairwise genotype similarity high enough. The kinship coefficients are computed using detected Identical by Descent (IBD) segments from RaPID. Unlike existing IBD-based metbods, RAFFI adopts a data-driven approach that adjusts the estimation based on phasing and genotyping quality. 
+### Efficiency
+For UK Biobank, RAFFI took 5 CPU-days while KING took 90 CPU-days.
+
+Run time comparison between RAFFI and KING in simulated and UK Biobank (UKB) data (487,409 individuals x 658,720 sites):
+| #Cores	| Tool	| Dataset	| Wall Time|
+| --------- | --- |------- | --- |
+|1	|RAFFI	|UKB	| ~ 5 days|
+|	|KING	|UKB	|~ 90 days|
+|24	|RAFFI	|UKB	|~ 15 h|
+|	|KING	|UKB |	~ 4 days|
+
+The experiments were run on a server with Intel(R) Xeon(R) Silver 4116 CPU @ 2.10GHz.
+
+The efficienct of RAFFI is based on the observation that for very large cohorts, it is much faster to identify all pairwise IBD segments long enough than to identify all pairwise genotype similarity high enough. The kinship coefficients are computed using detected Identical by Descent (IBD) segments from RaPID. 
+
+### Data-driven adjustment
+Unlike existing IBD-based metbods, RAFFI adopts a data-driven approach that adjusts the estimation based on phasing and genotyping quality: 
 
 ![kinship thresholds](https://github.com/ZhiGroup/RAFFI/blob/master/kinship_threshold.png)
 |:--:| 
 | *RAFFI adjusts the kinship coefficient thresholds to infer the degrees of relatedness. Kinship coefficients computed by the total sum of IBDs using RaPID in a dataset with phasing and genotyping errors with the expected kinship coefficient thresholds (left), and adjusted kinship coefficient thresholds for different degrees of relatedness accounting for phasing/genotyping errors (right)*.|
 
+### Robustness
+
 ![simulation_results](https://github.com/ZhiGroup/RAFFI/blob/master/king_raffi_simulation_res-1.png)
 |:--:| 
 | *Precision, Recall and F1 values (harmonic mean of precision and recall) for calling categories of close relatedness for RAFFI and KING using simulated datasets with different genotyping/phasing errors, admixture populations and maker densities*.|
-
-
-Run time comparison between RAFFI and KING in simulated and UK Biobank data using all participants:
-| #Cores	| Tool	| Dataset	| Wall Time|
-| --------- | --- |------- | --- |
-|1	|RAFFI	|Simulation | 0:27:14|
-|	|	|UKB	| ~ 5 days|
-|	|KING	|Simulation |	0:06:58|
-|	|	|UKB	|~ 90 days|
-|24	|RAFFI	|Simulation |	0:02:51|
-|	|	|UKB	|~ 15 h|
-|	|KING	|Simulation |	0:00:43|
-|	|	|UK-Biobank |	~ 4 days|
-
-The simulation dataset contains 4000 and the UK Biobank 487,409 individuals (658,720 sites). The experiments were run on a server with Intel(R) Xeon(R) Silver 4116 CPU @ 2.10GHz.
 
 
 ### Usage:
