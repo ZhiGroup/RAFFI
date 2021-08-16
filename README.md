@@ -74,6 +74,11 @@ Optional parameters:
         Default is python3.6
 </pre>
 
+A simple example has been included in the example folder. You can navigate to the Debug folder and type:
+<br>
+`./RAFFI_v.0.1 -i ../example/vcf_files/ -v maf_0.2_chr -g ../example/genetic_maps/ -o ../example/`
+<br>
+
 ### Output file:
 The inferred relationships are stored in a text file along with the computed kinship coefficients and the probability of zero IBD (IBD0), IBD1, and IBD2 between any two pair of related individuals:
 
